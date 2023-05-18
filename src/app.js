@@ -28,7 +28,7 @@ app.set('views', path.join(__dirname, '/views')); // Define la ubicación de la 
 const mainRouter = require('./routes/main'); // Rutas main
 const productsRouter = require('./routes/products'); // Rutas /products
 
-app.use('/Mercado-Liebre', mainRouter);
+app.use('/Mercado-Liebre/', mainRouter);
 app.use('/', mainRouter);
 app.use('/products', productsRouter);
 
