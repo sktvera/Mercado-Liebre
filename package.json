@@ -1,15 +1,19 @@
 {
+  "homepage": "https://sktvera.github.io/Mercado-Liebre",
   "name": "baseapphtml",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./src/bin/www"
+    "start": "nodemon ./src/bin/www",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "ejs": "~2.6.1",
     "express": "~4.16.1",
+    "gh-pages": "^5.0.0",
     "http-errors": "~1.6.3",
     "method-override": "^3.0.0",
     "morgan": "~1.9.1",
